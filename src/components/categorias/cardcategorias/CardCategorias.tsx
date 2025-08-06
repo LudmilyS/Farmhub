@@ -8,12 +8,12 @@ function CardCategorias({categorias}: CardCategoriasProps) {
   return (
     <div className="border flex flex-col rounded-2xl overflow-hidden justify-between">
       <header className="py-2 px-6 bg-red-800 text-white font-bold text-2x1">
-        Tema
+      <p>{categorias.nome}</p>
       </header>
       <p className="p-8 text-3x1 bg-slate-200 h-full">{categorias.descricao}</p>
 
       <div className="flex">
-        <Link to={`/editarcategorias/${categorias.id}`}
+        <Link to={`/editarcategoria/${categorias.id}`}
           className='w-full text-slate-100 bg-indigo-400 hover:bg-indigo-800 
     flex items-center justify-center py-2'>
           <button>Editar</button>
